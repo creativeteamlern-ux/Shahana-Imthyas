@@ -1,6 +1,6 @@
 // Editable sample wedding details. Confirm these before publishing.
 window.WEDDING = {
-  names: 'Imthyas & Shahana',
+  names: 'Shahana & Imthyas',
   date: '2026-11-14T15:30:00+05:30',
   endDate: '2026-11-14T23:00:00+05:30',
   timeZone: 'Asia/Kolkata',
