@@ -20,7 +20,8 @@ heroNames.replaceChildren(
   document.createTextNode(bride)
 );
   document.title = `${config.names} — A day, a lifetime`;
-  $('#deadline').textContent = config.rsvpDeadline;
+const deadline = $('#deadline');
+if (deadline) deadline.textContent = config.rsvpDeadline;
   $('#directions').href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(config.venue + ', ' + config.address)}`;
   const initials = config.names.split('&').map(name => name.trim()[0]).filter(Boolean);
   if (initials.length === 2) $$('.monogram').forEach(el => {el.replaceChildren(document.createTextNode(initials[0]), Object.assign(document.createElement('span'),{textContent:'&'}), document.createTextNode(initials[1]));});
