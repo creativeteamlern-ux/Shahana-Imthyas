@@ -1,13 +1,13 @@
 // Editable sample wedding details. Confirm these before publishing.
 window.WEDDING = {
   names: 'Shahana & Imthyas',
-  date: '2026-11-14T15:30:00+05:30',
-  endDate: '2026-11-14T23:00:00+05:30',
+  date: '2026-11-12T15:30:00+05:30',
+  endDate: '2026-11-12T23:00:00+05:30',
   timeZone: 'Asia/Kolkata',
   venue: 'City Auditorium Vellamunda',
   location: 'Vellamunda, Wayanad',
   address: '',
-  rsvpDeadline: 'Nov 14, 2026',
+  rsvpDeadline: 'Nov 12, 2026',
   // A real cinematic clip may be added here. The supplied recording is a UI reference.
   heroVideo: '',
   rsvpEndpoint: '/api/rsvp'
