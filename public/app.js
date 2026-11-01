@@ -30,6 +30,9 @@ heroNames.replaceChildren(
     const values = [Math.floor(remaining/86400000),Math.floor(remaining/3600000)%24,Math.floor(remaining/60000)%60,Math.floor(remaining/1000)%60];
     ['days','hours','minutes','seconds'].forEach((key,i)=>{$(`#${key}`).textContent=String(values[i]).padStart(2,'0');});
     if (!remaining) {$('#countdown-message').hidden=false; $('#countdown-message').textContent='Our forever has begun.';}
+    console.log("Countdown date:", date);
+    console.log("Remaining:", date.getTime() - Date.now());
+    console.log("Days element:", $("#days"));
   }
   tick(); setInterval(() => {if (!document.hidden) tick();},1000);
   document.addEventListener('visibilitychange',tick);
